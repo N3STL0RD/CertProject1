@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta char="utf-8">
+    <title>Gaming Survey Form </title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Gaming Survey</h1>
+    <p id="description">Please take the time to fill out this survey. Your personal information will be kept confidential.</p>
+    <form id="survey-form" method="post">
+      <label id="name-label" for="name">Username:</label>
+        <input type="text" id="name" name="name" required placeholder="Ex: John_Doe123">
+      <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Ex: jdoe123@gmail.com">
+      <label id="number-label" for="age">Age:</label>
+        <input type="number" id="number" name="age" min="15" max="118" required placeholder="Ex: 22">
+      <label for="dropdown" id="dropdown-label">What do you primarily use for gaming?</label>
+      <select id="dropdown" name="dropdown-label" required>
+        <option value="">(select one)</option>
+        <option value="1">Xbox</option>
+        <option value="2">Playstation</option>
+        <option value="3">PC</option>
+        <option value="4">Other</option>
+      </select>
+      <fieldset>
+        <legend>If you answered PC, what operating system (os) do you use?</legend>
+        <label for="windows" id="windows" class="inline"><input id="windows" name="pc-os" type="radio" class="inline" value="5">Windows</label>
+        <label for="mac-os" id="mac-os" class="inline"><input id="mac-os" name="pc-os" type="radio" class="inline" value="6">Mac OS</label>
+        <label for="linux" id="linux" class="inline"><input id="linux" name="pc-os" type="radio" class="inline" value="7">Linux</label>
+        <label for="none" id="none" class="inline"><input id="none" name="pc-os" type="radio" class="inline" checked value="0">N/A</label>
+      </fieldset>
+      <fieldset>
+        <legend>In the past week, did you spend at least 20 hours playing video games?</legend>
+          <label for="yes" id="yes" class="inline"><input id="yes" name="y/n" type="radio" class="inline" value="25">Yes</label>
+          <label for="no" id="no" class="inline"><input id="no" name="y/n" type="radio" class="inline" value="14">No</label>
+          <label for="unsure" id="unsure" class="inline"><input id="unsure" name="y/n" type="radio" class="inline" value="13" checked>I don't know</label>
+      </fieldset>
+      <fieldset>
+        <legend>What genre of games do you play (select all that apply)?</legend>
+        <label for="FPS" id="FPS" class="inline"><input type="checkbox" id="FPS" name="genres" class="inline" value="fps">First-Person Shooter</label>
+        <label for="Singleplayer" id="Singleplayer" class="inline"><input type="checkbox" id="Singleplayer" name="genres" class="inline" value="single">Singleplayer</label>
+        <label for="RPG" id="RPG" class="inline"><input type="checkbox" id="RPG" name="genres" class="inline" value="rpg">RPG</label>
+        <label for="TPS" id="TPS" class="inline"><input type="checkbox" id="TPS" name="genres" class="inline" value="tps">Third-Person Shooter</label>
+        <label for="Puzzle" id="Puzzle" class="inline"><input type="checkbox" id="Puzzle" name="genres" class="inline" value="puzzle">Puzzle</label>
+        <label for="Racing" id="Racing" class="inline"><input type="checkbox" id="Racing" name="genres" class="inline" value="race">Racing</label>
+        <label for="Sim" id="Sim" class="inline"><input type="checkbox" id="Sim" name="genres" class="inline" value="sim">Simulation</label>
+        <label for="Other" id="Other" class="inline"><input type="checkbox" id="Other" name="genres" class="inline" value="other" checked>Other</label>
+      </fieldset>
+      <fieldset>
+        <label for="comments">How would you describe the state of video games today? (optional)
+        <textarea id="comments" name="comments" rows="3" cols="30" placeholder="Ex: I think video games are ..."></textarea></label>
+      </fieldset>
+      <input type="submit" id="submit">
+    </form>
+  </body>
+</html>
